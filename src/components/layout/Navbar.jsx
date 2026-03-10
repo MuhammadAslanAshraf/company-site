@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
-// import { PopupModal } from "react-calendly";
+import { PopupModal } from "react-calendly";
+import BookCallButton from '../../BookCallButton';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -178,14 +179,14 @@ export default function Header() {
 
           {/* CTA + Mobile Menu Button */}
           <div className="flex items-center gap-4">
-            <a
+            {/* <a
               href="https://calendly.com/muhammadaslan4013/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-indigo-600 text-white rounded-full"
             >
               Book a Call
-            </a>
+            </a> */}
             {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
@@ -201,6 +202,7 @@ export default function Header() {
               onModalClose={() => setOpen(false)}
               rootElement={document.getElementById("root")}
             /> */}
+            <BookCallButton/>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 text-slate-300 hover:text-white transition-colors"

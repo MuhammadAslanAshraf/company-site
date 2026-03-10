@@ -1,4 +1,5 @@
 import React from 'react'
+import BookCallButton from '../BookCallButton'
 
 const HeroSections = () => {
 	return (
@@ -18,21 +19,7 @@ const HeroSections = () => {
 					<p className="text-sm md:text-2xl text-gray-700 leading-relaxed  md:py-6">
 						We specialize in practical AI agents that deliver real-world results, measurable and undeniable.
 					</p>
-					<button
-						className="
-              px-6 py-3 md:px-10 md:py-3 
-              bg-gradient-to-r from-indigo-600 to-purple-600
-              text-white text-lg md:text-2xl 
-              font-semibold rounded-full 
-              transition-all duration-300 
-              shadow-lg shadow-gray-900/25 
-              hover:shadow-xl hover:shadow-gray-900/35 
-              active:scale-95
-              whitespace-nowrap
-            "
-					>
-						Book a Call
-					</button>
+					<BookCallButton/>
 				</div>
 				{/* Right Side - Image + Card */}
 				<div className="flex flex-col w-full lg:w-1/2">
