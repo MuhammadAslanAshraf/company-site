@@ -1,4 +1,3 @@
-// src/components/layout/Header.tsx
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -10,7 +9,6 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  // const [open, setOpen] = useState(false)
   const toggleServices = () => setServicesOpen(prev => !prev);
   const MotionLink = motion(Link);
 

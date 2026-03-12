@@ -10,9 +10,6 @@ import {
   ArrowRight,
   CheckCircle,
   ChevronRight,
-  Phone,
-  Mail,
-  MapPin
 } from 'lucide-react';
 
 const ZeroneAboutPage = () => {

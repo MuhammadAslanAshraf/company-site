@@ -4,7 +4,6 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-slate-950/85 backdrop-blur-xl border-b border-slate-800/60 shadow-2xl shadow-black/30 border-t ">
-      {/* md:h-[600px] flex flex-col justify-center items-center */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
         <div className="grid md:grid-cols-3  gap-8">
           <div>
@@ -16,21 +15,11 @@ export default function Footer() {
           <div className='md:ml-20'>
             <h4 className="font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {/* <li><a href="/about" className="text-gray-300 ">About Us</a></li> */}
               <li><a href="#" className="text-gray-300 ">Services</a></li>
               <li><a href="#" className="text-gray-300 ">Portfolio</a></li>
               <li><a href="#" className="text-gray-300 ">Contact</a></li>
             </ul>
           </div>
-          {/* <div>
-            <h4 className="font-bold text-white mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li className="text-gray-300">Web Development</li>
-              <li className="text-gray-300">Mobile Development</li>
-              <li className="text-gray-300">UI/UX Design</li>
-              <li className="text-gray-300">Digital Marketing</li>
-            </ul>
-          </div> */}
           <div >
             <h4 className="font-bold text-white mb-4">Contact Info</h4>
             <ul className="space-y-2">
